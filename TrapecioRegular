@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class TrapecioRegular {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce la base menor del trapecio: ");
+        double baseMenor = scanner.nextDouble();
+
+        System.out.print("Introduce la base mayor del trapecio: ");
+        double baseMayor = scanner.nextDouble();
+
+        System.out.print("Introduce la altura del trapecio: ");
+        double altura = scanner.nextDouble();
+
+        double area = ((baseMenor + baseMayor) * altura) / 2;
+
+        System.out.println("El área del trapecio es: " + area);
+    }
+}
